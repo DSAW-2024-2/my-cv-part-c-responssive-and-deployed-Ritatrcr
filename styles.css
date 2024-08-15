@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+
+}
+
+h1 {
+    font-size: 40px;
+    color: #333;
+    margin: 0;
+    padding-top: 60px;
+    @media (max-width: 600px) {
+        padding-top: 40px;
+        font-size: 22px;
+    }
+}
+
+h2 {
+    font-size: 14px;
+    color: #7b1515;
+    font-weight: bold;
+    margin-top: 5px;
+    @media (max-width: 600px) {
+        font-size: 10px;
+    }
+}
+
+h3 {
+    font-size: 25px;
+    color: #555;
+    text-align: left;
+    padding-top: 48px;
+    @media (max-width: 600px) {
+        font-size: 15px;
+        padding-top: 20px;
+    }
+}
+
+h4 {
+    font-size: 18px;
+    color: #333;
+    padding-top: 8px;
+    @media (max-width: 600px) {
+
+        padding-top: 4px;
+        font-size: 10px;
+    }
+}
+
+p {
+    color: #666;
+    font-size: 14px;
+    @media (max-width: 600px) {
+        font-size: 8px;
+    }
+    
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    color: #666;
+    @media (max-width: 600px) {
+        font-size: 8px;
+    }
+}
+hr {
+    border: 0;
+    height: 1px;
+    background: #7b1515;
+}
+
+.cv-container {
+    display: flex;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    @media (max-width: 600px)
+    {
+        display: flex;
+        max-width: 500px;
+        margin: 5px auto;
+    }
+
+    @media (max-width: 500px)
+    {
+        display: flex;
+        max-width: 450px;
+        margin: 5px auto;
+    }
+    @media (max-width: 400px)
+    {
+        display: flex;
+        max-width: 380px;
+        margin: 8px auto;
+    }
+
+    .left-column {
+        width: 25%;
+        background-color: #beb2b2;
+        color: #fff;
+        padding: 30px;
+        @media (max-width: 600px){
+            width: 35%;
+            padding: 20px;
+        }
+        
+
+        .div-centrado{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .profile-picture img {
+            border-radius: 50%;
+            max-width: 150px;
+            height: auto;
+            margin: 20px auto;
+            border: 3px solid #fff;
+            @media (max-width: 600px) {
+                max-width: 100px;
+                margin: 10px auto;
+                border: 2px solid #fff;
+            }
+            
+        }
+        
+            
+        
+        .contact-info p {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .contact-info img {
+            width: 20px;
+            height: 20px;
+            @media (max-width: 600px)
+            {
+                width: 10px;
+                height: 10px;
+            }
+            
+        }
+        .link {
+            color: #666; 
+            text-decoration: none;
+            max-width: 100%; /* Limita el ancho del enlace */
+            display: inline-block; /* Necesario para que el max-width funcione */
+            word-wrap: break-word; /* Rompe palabras largas o URLs */
+            word-break: break-all; 
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        
+    }
+    .right-column {
+        width: 65%;
+        padding: 20px;
+        padding-left: 30px;
+        @media (max-width: 600px){
+            width: 65%;
+            padding: 14px;
+        }
+
+        .line {
+            width: 50px;
+            height: 7px;
+            background-color: #7b1515;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            @media (max-width: 600px)
+            {
+                margin-top: 10px;
+                width: 30px;
+                height: 5px;
+            }
+        }
+
+        .skill-bar {
+            background-color: #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 5px;
+            margin-right: 10px;
+            
+            .skill-percentage {
+                background-color: #7b1515;
+                height: 7px;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+
